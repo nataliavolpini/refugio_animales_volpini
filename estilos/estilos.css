@@ -1,0 +1,624 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Oleo+Script+Swash+Caps&family=Pacifico&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    height: 50px;
+    background-color: orange;
+}
+
+.logo{
+    margin-top: 5px;
+    margin-left: 15px;
+    color: white;
+    font-size: 25px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-shadow: 1px 1px 5px #000;
+}
+
+.logo:hover{
+    transform: scale(1.1);
+    transition: all 0.8s
+}
+
+.header i{
+    margin-top: 10px;
+    margin-right: 15px;
+    color: white;
+    font-size: 25px;
+}
+
+.fotos{
+    display: grid;
+    padding: 20px;
+    background-color:darksalmon
+}
+
+.item{
+    height: 200px;
+    width: 250px;
+    border: 2px solid #000;
+    background-size: cover;
+}
+
+.item1{
+    background-image: url(../assets/imagenes/img_main1.jpg);
+    width: auto;
+    background-size: cover;
+    background-position: center;
+    
+}
+
+.item2{
+    background-image: url(../assets/imagenes/img_main2.jpg);
+    width: auto;
+    background-size: cover;
+    background-position: center;
+    
+}
+
+.item3{
+    background-image: url(../assets/imagenes/img_main3.jpg);
+    width: auto;
+    background-size: cover;
+    background-position: left;
+    
+}
+
+.parrafo{
+    font-family: 'Oleo Script Swash Caps', cursive;
+    text-transform: capitalize;
+    font-size: 30px;
+    height: 250px;
+    text-align: center;
+    padding: 10px;
+    background-image: url(../assets/imagenes/fondo_huesitos.jpg);
+    background-size: cover;
+}
+
+.parrafo h2{
+    animation-duration: 2s;
+    animation-name: aparecer;
+    animation-delay: 5s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+}
+
+@keyframes aparecer{
+    0%{
+        opacity: 0;
+    }
+    
+    100%{
+        opacity: 1;
+    }
+}
+
+iframe{
+    width: 100%;
+    border: 2px solid;
+}
+
+.container{
+    border: 2px solid;
+    background-color: rgb(64, 131, 131);
+    
+}
+
+.container h2{
+    text-align: center;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.container input{
+    width: auto;
+    text-align: center;
+    padding: 3px;
+    margin: 10px;
+}
+
+.container label{
+    padding: 10px;
+    width: 80px;
+}
+
+.label{
+    display: inline-block;
+    width: 80px;
+}
+
+#botonsus{
+    border-radius: 2px;
+    background-color: rgba(128, 128, 128, 0.692);
+    margin-bottom: 10px;
+    text-align: center;
+    margin-left: 130px;
+    padding: 10px;
+    width: 100px;
+}
+
+.item4{
+    background-image: url(../assets/imagenes/pirotecnia_psv.PNG);
+    width: auto;
+    height: 350px;
+    background-size: cover;
+    background-position: center;
+    border: 2px solid;
+}
+
+.item5{
+    background-image: url(../assets/imagenes/maltrato_psv.PNG);
+    width: auto;
+    height: 500px;
+    background-size: cover;
+    background-position: center;
+    border: 2px solid;
+}
+
+footer{
+    display: grid;
+    background-color: orange;
+    height: 310px;
+}
+
+.redes{
+    margin-bottom: 10px;
+    text-transform:capitalize;
+    text-align: center;
+    color: white
+    
+}
+
+.redes img{
+    height: 100px;
+    width: 100px;
+}
+
+.redes a{
+    color: white;
+    letter-spacing: 10px;
+}
+
+.menu{ 
+    margin-bottom: 10px;
+    text-transform:capitalize;
+    text-align: center;
+    
+}
+
+.menu a{
+    text-decoration: none;
+    color: white;
+}
+
+a:hover{
+    color: black;
+}
+.contactanos{
+    
+    font-size: 15px;
+    text-align: center;
+    color: white
+}
+
+.contactanos h3{
+    padding-top: 5px;
+    
+}
+
+.copyright{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 15px;
+    color: white;
+    text-align: center;
+}
+
+.contgrid{
+    display: grid;
+}
+.imgconcientizacion{
+    display: grid;
+
+}
+
+footer{
+    display: grid
+}
+
+/*adopta*/
+
+.adopta h2{
+    padding-bottom: 10px;
+    font-family: 'Oleo Script Swash Caps', cursive;
+}
+
+.adopta{
+    width: auto;
+    background-color: #9EE781;
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+.imgadopta{
+    display: grid;
+}
+
+.adopta2{
+    background-image: url(../assets/imagenes/fondo_patitas.jpg);
+    background-size: cover;
+}
+
+.adopta2 img{
+    height: 50px;
+    width: 50px;
+} 
+
+.adopta2 img{
+    padding-bottom: 8px;
+    padding-left: 10px;
+}
+
+.adopta2 p{
+    padding-left: 10px;
+    padding-top: 5px;
+    padding-bottom: 15px;
+}
+
+.adopta2 h3{
+    padding-left: 10px;
+}
+
+.item7{
+    background-image: url(../assets/imagenes/adopta8.jpg);
+    width: auto;
+    height: 300px;
+}
+
+.item8{
+    background-image: url(../assets/imagenes/adopta7.jpg);
+    width: auto;
+    height: 300px;
+}
+
+
+.item9{
+    background-image: url(../assets/imagenes/adopta6.jpg);
+    width: auto;
+    height: 300px;
+    
+}
+
+.item10{
+    background-image: url(../assets/imagenes/adopta5.jpg);
+    width: auto;
+    height: 300px;
+}
+
+.item11{
+    background-image: url(../assets/imagenes/adopta4.webp);
+    width: auto;
+    height: 300px;
+}
+
+.adopta2 h2{
+    margin-top: 20px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+}
+
+.adopta2 dt{
+    margin-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;  
+}
+
+.adopta2 dd{
+    margin-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px; 
+}
+
+/*contactanos*/
+
+.contactformulario{
+    display: grid;
+    
+}
+
+.formcontact{
+    
+    display: block;
+    padding: 5px ;
+    border: solid #000;
+    background-image: linear-gradient(to top, #d1c86b, #cfcf65, #ccd661, #c8dd5c, #c1e559, #b3e960, #a4ed68, #94f071, #7cef84, #63ee95, #48eca6, #27e9b6);
+}
+
+.formcontact h2{
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.contacto label{
+    text-align: left;
+    display: inline-block;
+    width: 80px;
+}
+
+.contacto input{
+    width: auto;
+    text-align: left;
+    padding: 3px;
+    margin: 10px;
+}
+
+#consulta{
+    text-align: center;
+    margin-bottom: 10px;
+    text-align: center;
+    margin-left: 50px;
+    padding: 10px;
+    width: 50px;
+}
+
+#botoncontact{
+    border-radius: 2px;
+    background-color: rgba(128, 128, 128, 0.692);
+    margin-bottom: 10px;
+    text-align: center;
+    margin-left: 130px;
+    padding: 10px;
+    width: 100px;
+}
+
+.unicacion{
+    height: auto;
+}
+
+.ubicacion h1{
+    text-align: center;
+    display: grid;
+}
+
+.redes1{
+    margin-left: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.redes1 i{
+    padding-left: 10px;
+    font-size: 13px;
+    
+}
+
+
+.contacto label{
+    display: inline-block;
+    width: 200px;
+}
+
+
+
+/* media queries */
+
+@media only screen and (min-width:480px){
+.fotos{
+    grid-template-columns: 1fr 1fr;
+    grid-row: 1fr;
+}
+
+.item3{
+    grid-column: 1/3;
+}
+
+.item4{
+    height: 500px;
+}
+
+.item5{
+    height: 750px;
+}
+
+.item10{
+    background-position: right;
+}
+}
+
+
+@media only screen and (min-width:768px){
+.imgadopta{
+    grid-template-columns: 1fr 1fr;
+    grid-auto-rows: 1fr 1fr 1fr;
+}
+.item11{
+    grid-column: 1/3;
+}
+
+
+.contactformulario{
+    grid-template-columns: 1fr 1fr ;
+}   
+.contgrid{
+    grid-template-columns: 1fr 1fr;
+}
+
+.item3{
+    grid-column: 2/3;
+    grid-row: 1/2;
+}
+
+.fotos{
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.imgconcientizacion{
+    grid-template-columns: 50% 50%;
+}
+    
+.item6{
+    grid-column: 1/3;  
+}
+
+.item1:hover{
+    height: 300px;
+    transform: scale(1.1);
+    transition: 0.7s;
+}
+
+.item2:hover{
+    height: 300px;
+    transform: scale(1);
+    transition: 0.7s;
+    
+}
+
+.item3:hover{
+    height: 300px;
+    transform: scale(1.1);
+    transition: 0.7s;
+}
+
+.item4{
+    height: auto;
+}
+
+.parrafo{
+    height: 120px;
+}
+
+iframe{
+    height: 500px;
+}
+
+.container h2{
+    font-size: 30px;
+    padding-top: 5px;
+}
+
+.container input{
+    font-size: 25px;
+    margin-left: 20px;
+}
+
+.container label{
+    font-size: 25px;
+}
+
+#botonsus{
+    width: 200px;
+}
+
+footer{
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+
+.menuf{
+    grid-column: 1/2;
+}
+
+.redes{
+    grid-column: 2/3;
+        
+    margin-top: 20px;
+}
+
+.contactanos{
+    grid-column: 3/4;
+}
+
+.copyright{
+    grid-column: 2/3;
+}
+
+#consulta{
+        
+    text-align: center;
+    margin-bottom: 10px;
+    text-align: center;
+    margin-left: 213px;
+    padding: 10px;
+    width: 100px;
+}
+
+#botoncontact{
+    border-radius: 2px;
+    background-color: rgba(128, 128, 128, 0.692);
+    margin-bottom: 10px;
+    text-align: center;
+    margin-top: 20px;
+    margin-left: 500px;
+    padding: 10px;
+    width: 100px;
+}
+
+#botoncontact:hover{
+    background-color: rgba(219, 160, 49, 0.842);
+    transition: all 0.5s;
+}
+
+.contacto textarea{
+    margin-left: 10px;
+
+}
+}
+
+@media only screen and (min-width:1024px){
+
+
+.imgadopta{
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+
+.item7{
+    grid-column: 1/2;
+    height: 500px;
+    background-position: center;
+}
+
+.item8{
+    height: 500px;
+    grid-column: 2/4;
+}
+
+.item9{
+    grid-column: 3/4;
+    height: 500px;
+}
+
+.item10{
+    grid-column: 1/2;
+    grid-row: 2/3;
+    height: 500px;
+}
+.item11{
+    grid-column: 2/3;
+    grid-row: 2/3;
+    height: 500px;
+}
+}
+
+
+
+
+        
+
+    
+
+
+
+
+
+
+
+
