@@ -6,49 +6,82 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
     <link rel="stylesheet" href="../estilos/estilos.css">
     <link rel=" shortcut icon" href="../assets/imagenes/logo_refugio.png">
     <title>Conocenos</title>
 </head>
 <body>
-    <nav>
-        <header class="header">
-            <div class="logo">Patitas con <span>alas</span></div>
-            <i class="fa-solid fa-bars"></i>
-        </header>
-    </nav>
-    <main>
-        <section id="historia">
-            <h1>Nuestra Historia</h1>
-            <p>Somos una institucion sin fines de lucro cuyo objetivo es proteger a aquellos animales que son abandonados, sufren maltrato o simplemente la indiferencia. Nuestra mision es rescatar, curar, dar en adpcion y <strong>concientizar sobre el maltrato animal</strong>
-            </p>
-        </section>
-        <section>
-            <p class="fotoscur">Aca van a ir fotos del antes y despues de los perris</p>
-        </section>
-    </main>
-    <footer>
-        <ul class="menu">
-            <li><a href="../index.html">Inicio</a></li>
-            <li><a href="./quehacemos.html">Lo que hacemos</a></li>
-            <li><a href="./adopta.html">Adopta</a></li>
-            <li><a href="./dona.html">Dona</a></li>
-            <li><a href="./contactanos.html">Contactanos</a></li>
+<!-- navbar inicia -->
+<nav class="navbar navbar-expand-md  navbar-dark barra">
+    <!-- Brand -->
+    <a class="navbar-brand" href="#">Patitas con Alas</a>
+
+    <!-- Toggler/collapsibe Button -->
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <!-- Navbar links -->
+    <div class="collapse navbar-collapse" id="collapsibleNavbar">
+        <ul class="navbar-nav">
+            <li class="nav-item">
+                <a class="nav-link" href="../index.html">Inicio</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="adopta.html">Adopciones</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="dona.html">Donaciones</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="quehacemos.html">Lo que hacemos</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="contactanos.html">Contactanos</a>
+            </li>
         </ul>
-        <div class="contactanos">
-            <h2>Mandanos un mail</h2>
-            <h3>patitasconalas@patitasconalas.com</h3>
-        </div>
+    </div>
+</nav>
+<!-- navbar finaliza -->
+        <section class="historia">
+            <div class="hleft"></div>
+            <div class="hright">
+                <h3>Nuestra Historia</h3>
+                <p>Patitas con Alas es una entidad solidaria creada en Buenos Aires con el objetivo de ayudar a perros sin hogar. La fundación tiene la mision principal de rescatar perros en riesgo y buscarles un hogar definitivo. En nuestra Colonia Canina albergamos animalitos  que han sido rescatados de la calle o de situaciones de abuso, y los recuperamos para que puedan ser incorporados a una familia a través de la adopción responsable. 
+                Muchos de ellos tienen la suerte de encontrar un hogar definitivo, mientras que otros se quedan con nosotros por el resto de sus vidas, y es nuestro compromiso asegurar que cada animalito  tenga una buena vida en nuestro refugio, incluyendo excelente alimentación, cuidados veterinarios, cariño y juego, sin importar cuánto tiempo deba vivir allí.
+                Nuestro Centro de Adopciones está siempre abierto a quienes estén buscando una mascota para amar y cuidar.  Durante todo el año hay perritos de todas las edades, tamaños y colores esperando que lleguen sus nuevos humanos. </p>
+            </div>
+        </section>
+    
+    <footer>
         <div class="redes">
-            <h2>Seguinos en nuestras redes sociales</h2>
+            <h2>Seguinos en nuestras redes sociales</h2> <br>
             <a href="https://es-la.facebook.com/"><i class="fa-brands fa-facebook-f"></i></a>
             <a href="https://www.instagram.com"><i class="fa-brands fa-square-instagram"></i></a>
             <a href="https://www.youtube.com/"><i class="fa-brands fa-youtube"></i></a>
+            <br>
+        </div>
+        <div class="menuf" >
+            <ul class="menu">
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="./quehacemos.html">Lo que hacemos</a></li>
+                <li><a href="./adopta.html">Adopta</a></li>
+                <li><a href="./dona.html">Dona</a></li>
+                <li><a href="./contactanos.html">Contactanos</a></li>
+            </ul><br>
+        </div>
+        <div class="contactanos">
+            <h2>Mandanos un mail</h2>
+            <h2>patitasconalas@patitasconalas.com</h2>
         </div>
         <div class="copyright">
             <p>Copyright &copy; 2022 Todos los derechos reservados</p>
         </div>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js" integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+" crossorigin="anonymous"></script>
 </body>
 
 </html>

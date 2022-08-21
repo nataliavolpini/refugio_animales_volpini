@@ -114,8 +114,13 @@ iframe{
 }
 
 .container{
+    
     border: 2px solid;
     background-color: rgb(64, 131, 131);
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    
     
 }
 
@@ -177,6 +182,7 @@ footer{
 }
 
 .redes{
+    margin-top: 10px;
     margin-bottom: 10px;
     text-transform:capitalize;
     text-align: center;
@@ -233,6 +239,8 @@ a:hover{
 
 .contgrid{
     display: grid;
+    
+    
 }
 .imgconcientizacion{
     display: grid;
@@ -355,6 +363,9 @@ footer{
 
 main{
     /* background-image: url(../assets/imagenes/fondo_contactanos.jpg); */
+    background-image: url(../assets/imagenes/fondo_galeria.jpg);
+    background-size: cover;
+    background-position: center;
 }
 .contactformulario{
     display: grid;
@@ -365,13 +376,16 @@ main{
     margin: 10px;
     display: block;
     padding: 5px ;
-    /* background-image: linear-gradient(to top, #d1c86b, #cfcf65, #ccd661, #c8dd5c, #c1e559, #b3e960, #a4ed68, #94f071, #7cef84, #63ee95, #48eca6, #27e9b6); */
+    
 }
 
 .formcontact h2{
     text-align: center;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: rgba(0, 0, 0, 0.63)
 }
+
+
 .contacto label{
     text-align: left;
     display: inline-block;
@@ -410,20 +424,24 @@ main{
 
 .ubicacion h1{
     text-align: center;
+    color: rgba(0, 0, 0, 0.63);
     display: grid;
 }
 
 .redes1{
     margin-left: 10px;
-    margin-top: 10px;
+    margin-top: 30px;
     margin-bottom: 10px;
     text-align: center;
+    margin-bottom: 0;
+    padding-bottom: 20px;
+    font-weight: bold;
 }
 
 .redes1 i{
     padding-left: 10px;
-    font-size: 13px;
-    
+    font-size: 15px;
+    font-weight: bold;
 }
 
 
@@ -488,6 +506,31 @@ main{
     width: 100%;
     object-fit: cover;
 }
+
+/* Lo que hacemos */
+.historia{
+    display: grid;
+    
+}
+
+.hleft{
+    background-image: url(../assets/imagenes/aside_left.jpg);
+    height: 500px;
+    background-size: cover;
+    background-position: center;
+    
+}
+.hright{
+    padding: 20px;
+    height: auto;
+    
+}
+
+.hright h3{
+    text-align: center;
+    height: auto;
+}
+
 /* media queries */
 
 @media only screen and (min-width:480px){
@@ -540,9 +583,7 @@ main{
 }
 
 
-.contactformulario{
-    grid-template-columns: 1fr 1fr ;
-}   
+
 .contgrid{
     grid-template-columns: 1fr 1fr;
 }
@@ -661,10 +702,7 @@ footer{
     transition: all 0.5s;
 }
 
-.contacto textarea{
-    margin-left: 10px;
 
-}
 
 .contenedrodona{
     grid-template-columns: 1fr 1fr;
@@ -690,12 +728,27 @@ footer{
     grid-column: 1/3;
 }
 
+.historia{
+    grid-template-columns: 1fr 1fr;
 }
+
+.hright{
+    grid-column: 2/3;
+}
+
+.hleft{
+    grid-column: 1/2;
+}
+}
+
+
 
 @media only screen and (min-width:1024px){
 
-
-    .item5{
+.contactformulario{
+        grid-template-columns: 1fr 1fr ;
+    }   
+.item5{
         height: 800px;
     }
 
@@ -736,6 +789,15 @@ footer{
 
 .item16{
     height: auto;
+}
+.formcontact input{
+    width: 500px;
+}
+#consulta{
+    width: 150px; 
+}
+.hright{
+    font-size: 15px;
 }
 
 }
