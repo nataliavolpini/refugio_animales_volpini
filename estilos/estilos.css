@@ -8,6 +8,7 @@
 }
 
 
+
 .header{
     display: flex;
     justify-content: space-between;
@@ -36,6 +37,9 @@
     font-size: 25px;
 }
 
+.carousel-inner{
+    height: 500px;
+}
 .fotos{
     display: grid;
     padding: 20px;
@@ -80,7 +84,7 @@
     height: 250px;
     text-align: center;
     padding: 10px;
-    background-image: url(../assets/imagenes/fondo_huesitos.jpg);
+    background-image: linear-gradient(to right,rgba(255, 255, 255, 0.199), rgba(255, 255, 255, 0.555)), url(../assets/imagenes/fondo_huesitos.jpg);
     background-size: cover;
 }
 
@@ -90,6 +94,7 @@
     animation-delay: 5s;
     animation-direction: alternate;
     animation-iteration-count: infinite;
+    padding-top: 25px;
 }
 
 @keyframes aparecer{
@@ -104,12 +109,18 @@
 
 iframe{
     width: 100%;
+    height: 500px;
     border: 2px solid;
 }
 
 .container{
+    
     border: 2px solid;
     background-color: rgb(64, 131, 131);
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    
     
 }
 
@@ -166,15 +177,17 @@ iframe{
 
 footer{
     display: grid;
-    background-color: orange;
-    height: 310px;
+    background-color:  #1aaf6f;
+    height: 3auto;
 }
 
 .redes{
+    margin-top: 10px;
     margin-bottom: 10px;
     text-transform:capitalize;
     text-align: center;
-    color: white
+    color: white;
+    
     
 }
 
@@ -186,6 +199,10 @@ footer{
 .redes a{
     color: white;
     letter-spacing: 10px;
+}
+
+.redes h2{
+    font-size: 20px;
 }
 
 .menu{ 
@@ -201,18 +218,15 @@ footer{
 }
 
 a:hover{
-    color: black;
+    color: rgba(17, 11, 3, 0.575);
 }
 .contactanos{
-    
-    font-size: 15px;
     text-align: center;
     color: white
 }
 
-.contactanos h3{
-    padding-top: 5px;
-    
+.contactanos h2{
+    font-size: 15px;
 }
 
 .copyright{
@@ -225,6 +239,8 @@ a:hover{
 
 .contgrid{
     display: grid;
+    
+    
 }
 .imgconcientizacion{
     display: grid;
@@ -237,79 +253,94 @@ footer{
 
 /*adopta*/
 
-.adopta h2{
-    padding-bottom: 10px;
-    font-family: 'Oleo Script Swash Caps', cursive;
-}
-
-.adopta{
-    width: auto;
-    background-color: #9EE781;
+.galeria{
+    background-image: url(../assets/imagenes/fondo_galeria.jpg);
+    padding-bottom: 20px;
+    margin: 0;
     text-align: center;
-    padding-bottom: 10px;
+    color: rgb(38, 238, 20);
+    padding-top: 10px;
 }
-
 .imgadopta{
     display: grid;
+    grid-gap: 10px ;
+    background-image: url(../assets/imagenes/fondo_galeria.jpg);
 }
-
 .adopta2{
     background-image: url(../assets/imagenes/fondo_patitas.jpg);
     background-size: cover;
 }
-
 .adopta2 img{
     height: 50px;
     width: 50px;
 } 
-
 .adopta2 img{
     padding-bottom: 8px;
     padding-left: 10px;
 }
-
 .adopta2 p{
     padding-left: 10px;
     padding-top: 5px;
     padding-bottom: 15px;
 }
-
 .adopta2 h3{
     padding-left: 10px;
 }
-
 .item7{
     background-image: url(../assets/imagenes/adopta8.jpg);
     width: auto;
     height: 300px;
+    filter: grayscale(100%);
 }
-
+.item7:hover{
+    transform: scale(1.04);
+    transition: all 0.8s;
+    filter: grayscale(0%);
+}
 .item8{
     background-image: url(../assets/imagenes/adopta7.jpg);
     width: auto;
     height: 300px;
+    filter: grayscale(100%);
 }
-
-
+.item8:hover{
+    transform: scale(1.04);
+    transition: all 0.8s;
+    filter: grayscale(0%);
+}
 .item9{
     background-image: url(../assets/imagenes/adopta6.jpg);
     width: auto;
     height: 300px;
-    
+    filter: grayscale(100%);
 }
-
+.item9:hover{
+    transform: scale(1.04);
+    transition: all 0.8s;
+    filter: grayscale(0%);
+}
 .item10{
     background-image: url(../assets/imagenes/adopta5.jpg);
     width: auto;
     height: 300px;
+    filter: grayscale(100%);
 }
-
+.item10:hover{
+    transform: scale(1.04);
+    transition: all 0.8s;
+    filter: grayscale(0%);
+}
 .item11{
     background-image: url(../assets/imagenes/adopta4.webp);
     width: auto;
     height: 300px;
+    filter: grayscale(100%);
 }
-
+.item11:hover{
+    transform: scale(1.04);
+    transition: all 0.8s;
+    filter: grayscale(0%);
+}
 .adopta2 h2{
     margin-top: 20px;
     padding-bottom: 10px;
@@ -330,23 +361,31 @@ footer{
 
 /*contactanos*/
 
+main{
+    /* background-image: url(../assets/imagenes/fondo_contactanos.jpg); */
+    background-image: url(../assets/imagenes/fondo_galeria.jpg);
+    background-size: cover;
+    background-position: center;
+}
 .contactformulario{
     display: grid;
     
 }
 
 .formcontact{
-    
+    margin: 10px;
     display: block;
     padding: 5px ;
-    border: solid #000;
-    background-image: linear-gradient(to top, #d1c86b, #cfcf65, #ccd661, #c8dd5c, #c1e559, #b3e960, #a4ed68, #94f071, #7cef84, #63ee95, #48eca6, #27e9b6);
+    
 }
 
 .formcontact h2{
     text-align: center;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: rgba(0, 0, 0, 0.63)
 }
+
+
 .contacto label{
     text-align: left;
     display: inline-block;
@@ -371,7 +410,7 @@ footer{
 
 #botoncontact{
     border-radius: 2px;
-    background-color: rgba(128, 128, 128, 0.692);
+    background-color: rgba(15, 46, 3, 0.384);
     margin-bottom: 10px;
     text-align: center;
     margin-left: 130px;
@@ -385,19 +424,24 @@ footer{
 
 .ubicacion h1{
     text-align: center;
+    color: rgba(0, 0, 0, 0.63);
     display: grid;
 }
 
 .redes1{
     margin-left: 10px;
-    margin-top: 10px;
+    margin-top: 30px;
     margin-bottom: 10px;
+    text-align: center;
+    margin-bottom: 0;
+    padding-bottom: 20px;
+    font-weight: bold;
 }
 
 .redes1 i{
     padding-left: 10px;
-    font-size: 13px;
-    
+    font-size: 15px;
+    font-weight: bold;
 }
 
 
@@ -407,6 +451,85 @@ footer{
 }
 
 
+
+
+
+/*Dona*/
+
+.barra{
+    background-color: #1aaf6f;
+    
+    
+}
+.navbar-brand{
+    text-shadow: 0 0 5px #000;
+    font-size: 30px;
+}
+.nav-item{
+    font-size: 20px;
+}
+
+.navbar-brand::after{
+    margin-left: 10px;
+    content: "🐾" 
+}
+.jumbotron{
+    background-image: linear-gradient(to right,rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.555)), url(../assets/imagenes/jumbotromp.webp); 
+    background-size: cover;
+    color: rgba(2, 15, 26, 0.87);
+    border-radius: 0;
+    margin: 0px;
+    height: 370px;
+    font-size: 20px;
+}
+.jumbotron p::selection{
+    color: rgba(28, 116, 50, 0.651);
+}
+
+.canalesdona{
+    background-color: #1aaf6f ;
+    text-align: center;
+    padding: 10px;
+    color: white;
+    margin: 0;
+    
+}
+.mp{
+    background-color: rgba(2, 15, 26, 0.87);
+    color: rgba(0, 0, 0, 0.623);
+}
+.carousel img{
+    display: block;
+    height: 600px;
+    max-width: 100%;
+    line-height: 1;
+    width: 100%;
+    object-fit: cover;
+}
+
+/* Lo que hacemos */
+.historia{
+    display: grid;
+    
+}
+
+.hleft{
+    background-image: url(../assets/imagenes/aside_left.jpg);
+    height: 500px;
+    background-size: cover;
+    background-position: center;
+    
+}
+.hright{
+    padding: 20px;
+    height: auto;
+    
+}
+
+.hright h3{
+    text-align: center;
+    height: auto;
+}
 
 /* media queries */
 
@@ -431,6 +554,22 @@ footer{
 .item10{
     background-position: right;
 }
+
+.item12{
+    height: 300px;
+}
+.item13{
+    height: 300px;
+}
+.item14{
+    height: 300px;
+}
+.item15{
+    height: 300px;
+}
+.item16{
+    height: 300px;
+}
 }
 
 
@@ -444,9 +583,7 @@ footer{
 }
 
 
-.contactformulario{
-    grid-template-columns: 1fr 1fr ;
-}   
+
 .contgrid{
     grid-template-columns: 1fr 1fr;
 }
@@ -495,7 +632,7 @@ footer{
     height: 120px;
 }
 
-iframe{
+.ubi{
     height: 500px;
 }
 
@@ -528,7 +665,6 @@ footer{
 
 .redes{
     grid-column: 2/3;
-        
     margin-top: 20px;
 }
 
@@ -566,14 +702,58 @@ footer{
     transition: all 0.5s;
 }
 
-.contacto textarea{
-    margin-left: 10px;
 
+
+.contenedrodona{
+    grid-template-columns: 1fr 1fr;
+}
+
+.canales{
+    grid-column: 1/2;
+}
+
+.mercadopago{
+    grid-column: 2/3;
+}
+
+.canales{
+    font-size: 30px;
+    margin-top: 120px;
+}
+.imgdona{
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+}
+.item16{
+    grid-column: 1/3;
+}
+
+.historia{
+    grid-template-columns: 1fr 1fr;
+}
+
+.hright{
+    grid-column: 2/3;
+}
+
+.hleft{
+    grid-column: 1/2;
 }
 }
+
+
 
 @media only screen and (min-width:1024px){
 
+.contactformulario{
+        grid-template-columns: 1fr 1fr ;
+    }   
+.item5{
+        height: 800px;
+    }
+
+
+    
 
 .imgadopta{
     grid-template-columns: 1fr 1fr 1fr;
@@ -606,6 +786,28 @@ footer{
     grid-row: 2/3;
     height: 500px;
 }
+
+.item16{
+    height: auto;
+}
+.formcontact input{
+    width: 500px;
+}
+#consulta{
+    width: 150px; 
+}
+.hright{
+    font-size: 15px;
+}
+
+}
+@media only screen and (min-width:1200px){
+    .ubi{
+        width: 600px;
+        height: 400px;
+        margin-left: 100px;
+    }
+
 }
 
 
