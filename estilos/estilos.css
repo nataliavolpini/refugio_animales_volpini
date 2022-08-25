@@ -1,5 +1,6 @@
 
-@import url('https://fonts.googleapis.com/css2?family=Oleo+Script+Swash+Caps&family=Pacifico&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Oleo+Script+Swash+Caps&family=Pacifico&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Oleo+Script+Swash+Caps&family=Pacifico&family=Saira+Condensed:wght@300&display=swap');
 
 *{
     margin: 0;
@@ -7,77 +8,36 @@
     box-sizing: border-box;
 }
 
-
-
-.header{
-    display: flex;
-    justify-content: space-between;
-    height: 50px;
-    background-color: orange;
+.barra{
+    background-color: #1aaf6f;
 }
 
-.logo{
-    margin-top: 5px;
-    margin-left: 15px;
-    color: white;
-    font-size: 25px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    text-shadow: 1px 1px 5px #000;
+.navbar-brand{
+    text-shadow: 0 0 5px #000;
+    font-size: 30px;
 }
 
-.logo:hover{
-    transform: scale(1.1);
-    transition: all 0.8s
+.nav-item{
+    font-size: 20px;
 }
 
-.header i{
-    margin-top: 10px;
-    margin-right: 15px;
-    color: white;
-    font-size: 25px;
+.navbar-brand::after{
+    margin-left: 10px;
+    content: "🐾" 
 }
 
-.carousel-inner{
+.carousel-inner {
     height: 500px;
 }
-.fotos{
-    display: grid;
-    padding: 20px;
-    background-color:darksalmon
-}
 
-.item{
+.item {
     height: 200px;
     width: 250px;
     border: 2px solid #000;
     background-size: cover;
 }
 
-.item1{
-    background-image: url(../assets/imagenes/img_main1.jpg);
-    width: auto;
-    background-size: cover;
-    background-position: center;
-    
-}
-
-.item2{
-    background-image: url(../assets/imagenes/img_main2.jpg);
-    width: auto;
-    background-size: cover;
-    background-position: center;
-    
-}
-
-.item3{
-    background-image: url(../assets/imagenes/img_main3.jpg);
-    width: auto;
-    background-size: cover;
-    background-position: left;
-    
-}
-
-.parrafo{
+.parrafo {
     font-family: 'Oleo Script Swash Caps', cursive;
     text-transform: capitalize;
     font-size: 30px;
@@ -88,7 +48,7 @@
     background-size: cover;
 }
 
-.parrafo h2{
+.parrafo h2 {
     animation-duration: 2s;
     animation-name: aparecer;
     animation-delay: 5s;
@@ -97,59 +57,56 @@
     padding-top: 25px;
 }
 
-@keyframes aparecer{
+@keyframes aparecer {
     0%{
         opacity: 0;
     }
     
-    100%{
+    100% {
         opacity: 1;
     }
 }
 
-iframe{
+iframe {
     width: 100%;
     height: 500px;
     border: 2px solid;
 }
 
-.container{
-    
+.container {
     border: 2px solid;
-    background-color: rgb(64, 131, 131);
+    background-color: rgb(64 131 131);
     width: 100%;
     padding: 0;
     margin: 0;
-    
-    
 }
 
-.container h2{
+.container h2 {
     text-align: center;
     margin-bottom: 10px;
     margin-top: 10px;
 }
 
-.container input{
+.container input {
     width: auto;
     text-align: center;
     padding: 3px;
     margin: 10px;
 }
 
-.container label{
+.container label {
     padding: 10px;
     width: 80px;
 }
 
-.label{
+.label {
     display: inline-block;
     width: 80px;
 }
 
-#botonsus{
+#botonsus {
     border-radius: 2px;
-    background-color: rgba(128, 128, 128, 0.692);
+    background-color: rgb(128 128 128 69.2%);
     margin-bottom: 10px;
     text-align: center;
     margin-left: 130px;
@@ -157,8 +114,8 @@ iframe{
     width: 100px;
 }
 
-.item4{
-    background-image: url(../assets/imagenes/pirotecnia_psv.PNG);
+.item4 {
+    background-image: url("../assets/imagenes/pirotecnia_psv.PNG");
     width: auto;
     height: 350px;
     background-size: cover;
@@ -166,8 +123,8 @@ iframe{
     border: 2px solid;
 }
 
-.item5{
-    background-image: url(../assets/imagenes/maltrato_psv.PNG);
+.item5 {
+    background-image: url("../assets/imagenes/maltrato_psv.PNG");
     width: auto;
     height: 500px;
     background-size: cover;
@@ -175,10 +132,10 @@ iframe{
     border: 2px solid;
 }
 
-footer{
+footer {
     display: grid;
     background-color:  #1aaf6f;
-    height: 3auto;
+    height: auto;
 }
 
 .redes{
@@ -187,8 +144,6 @@ footer{
     text-transform:capitalize;
     text-align: center;
     color: white;
-    
-    
 }
 
 .redes img{
@@ -209,7 +164,6 @@ footer{
     margin-bottom: 10px;
     text-transform:capitalize;
     text-align: center;
-    
 }
 
 .menu a{
@@ -220,6 +174,7 @@ footer{
 a:hover{
     color: rgba(17, 11, 3, 0.575);
 }
+
 .contactanos{
     text-align: center;
     color: white
@@ -239,108 +194,114 @@ a:hover{
 
 .contgrid{
     display: grid;
-    
-    
 }
+
 .imgconcientizacion{
     display: grid;
-
 }
 
-footer{
-    display: grid
-}
-
-/*adopta*/
+/* adopta */
 
 .galeria{
-    background-image: url(../assets/imagenes/fondo_galeria.jpg);
+    background-image: url("../assets/imagenes/fondo_galeria.jpg");
     padding-bottom: 20px;
     margin: 0;
     text-align: center;
-    color: rgb(38, 238, 20);
+    color: rgb(38 238 20);
     padding-top: 10px;
 }
+
 .imgadopta{
     display: grid;
     grid-gap: 10px ;
-    background-image: url(../assets/imagenes/fondo_galeria.jpg);
+    background-image: url("../assets/imagenes/fondo_galeria.jpg");
+    margin: 5px;
 }
+
 .adopta2{
-    background-image: url(../assets/imagenes/fondo_patitas.jpg);
+    background-image: url("../assets/imagenes/fondo_patitas.jpg");
     background-size: cover;
-}
-.adopta2 img{
-    height: 50px;
-    width: 50px;
-} 
-.adopta2 img{
-    padding-bottom: 8px;
-    padding-left: 10px;
-}
-.adopta2 p{
     padding-left: 10px;
     padding-top: 5px;
     padding-bottom: 15px;
 }
+
+.adopta2 img{
+    height: 50px;
+    width: 50px;
+    padding-bottom: 8px;
+    padding-left: 10px;
+} 
+
 .adopta2 h3{
     padding-left: 10px;
 }
+
 .item7{
-    background-image: url(../assets/imagenes/adopta8.jpg);
+    background-image: url("../assets/imagenes/adopta8.jpg");
     width: auto;
     height: 300px;
     filter: grayscale(100%);
 }
+
 .item7:hover{
     transform: scale(1.04);
     transition: all 0.8s;
     filter: grayscale(0%);
 }
+
 .item8{
-    background-image: url(../assets/imagenes/adopta7.jpg);
+    background-image: url("../assets/imagenes/adopta7.jpg");
     width: auto;
     height: 300px;
     filter: grayscale(100%);
 }
+
 .item8:hover{
     transform: scale(1.04);
     transition: all 0.8s;
     filter: grayscale(0%);
 }
+
 .item9{
-    background-image: url(../assets/imagenes/adopta6.jpg);
+    background-image: url("../assets/imagenes/adopta6.jpg");
     width: auto;
     height: 300px;
     filter: grayscale(100%);
 }
+
 .item9:hover{
     transform: scale(1.04);
     transition: all 0.8s;
     filter: grayscale(0%);
 }
+
 .item10{
-    background-image: url(../assets/imagenes/adopta5.jpg);
+    background-image: url("../assets/imagenes/adopta5.jpg");
     width: auto;
     height: 300px;
     filter: grayscale(100%);
 }
+
 .item10:hover{
     transform: scale(1.04);
     transition: all 0.8s;
     filter: grayscale(0%);
 }
+
 .item11{
-    background-image: url(../assets/imagenes/adopta4.webp);
+    background-image: url("../assets/imagenes/adopta4.webp");
     width: auto;
     height: 300px;
     filter: grayscale(100%);
 }
+
 .item11:hover{
     transform: scale(1.04);
     transition: all 0.8s;
     filter: grayscale(0%);
 }
+
 .adopta2 h2{
     margin-top: 20px;
     padding-bottom: 10px;
@@ -359,37 +320,40 @@ footer{
     padding-left: 10px; 
 }
 
-/*contactanos*/
+/* contactanos */
 
 main{
-    /* background-image: url(../assets/imagenes/fondo_contactanos.jpg); */
-    background-image: url(../assets/imagenes/fondo_galeria.jpg);
+    background-image: url("../assets/imagenes/fondo_galeria.jpg");
     background-size: cover;
     background-position: center;
 }
+
 .contactformulario{
     display: grid;
-    
 }
 
 .formcontact{
     margin: 10px;
     display: block;
     padding: 5px ;
+    width: auto;
     
+}
+
+.contacto{
+    margin-top: 20px;
 }
 
 .formcontact h2{
     text-align: center;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    color: rgba(0, 0, 0, 0.63)
+    color: rgb(0 0 0 63%)
 }
-
 
 .contacto label{
     text-align: left;
     display: inline-block;
-    width: 80px;
+    width: 200px;
 }
 
 .contacto input{
@@ -402,7 +366,6 @@ main{
 #consulta{
     text-align: center;
     margin-bottom: 10px;
-    text-align: center;
     margin-left: 50px;
     padding: 10px;
     width: 50px;
@@ -410,28 +373,27 @@ main{
 
 #botoncontact{
     border-radius: 2px;
-    background-color: rgba(15, 46, 3, 0.384);
-    margin-bottom: 10px;
+    background-color: rgb(15 46 3 38.4%);
+    margin-bottom: 5px;
     text-align: center;
-    margin-left: 130px;
-    padding: 10px;
-    width: 100px;
+    margin-left: 300px;
+    padding: 5px;
+    width: 150px;
 }
 
-.unicacion{
+.ubicacion{
     height: auto;
 }
 
-.ubicacion h1{
+.ubicacion h2{
     text-align: center;
-    color: rgba(0, 0, 0, 0.63);
+    color: rgb(0 0 0 63%);
     display: grid;
 }
 
 .redes1{
     margin-left: 10px;
     margin-top: 30px;
-    margin-bottom: 10px;
     text-align: center;
     margin-bottom: 0;
     padding-bottom: 20px;
@@ -444,46 +406,20 @@ main{
     font-weight: bold;
 }
 
+/* Dona */
 
-.contacto label{
-    display: inline-block;
-    width: 200px;
-}
-
-
-
-
-
-/*Dona*/
-
-.barra{
-    background-color: #1aaf6f;
-    
-    
-}
-.navbar-brand{
-    text-shadow: 0 0 5px #000;
-    font-size: 30px;
-}
-.nav-item{
-    font-size: 20px;
-}
-
-.navbar-brand::after{
-    margin-left: 10px;
-    content: "🐾" 
-}
 .jumbotron{
     background-image: linear-gradient(to right,rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.555)), url(../assets/imagenes/jumbotromp.webp); 
     background-size: cover;
-    color: rgba(2, 15, 26, 0.87);
+    color: rgb(2 15 26 87%);
     border-radius: 0;
     margin: 0px;
     height: 370px;
-    font-size: 20px;
+    font-size: 20px;    
 }
+
 .jumbotron p::selection{
-    color: rgba(28, 116, 50, 0.651);
+    color: rgb(28 116 50 65.1%);
 }
 
 .canalesdona{
@@ -492,12 +428,13 @@ main{
     padding: 10px;
     color: white;
     margin: 0;
-    
 }
+
 .mp{
-    background-color: rgba(2, 15, 26, 0.87);
-    color: rgba(0, 0, 0, 0.623);
+    background-color: rgb(2 15 26 87%);
+    color: rgb(0 0 0 62.3%);
 }
+
 .carousel img{
     display: block;
     height: 600px;
@@ -508,47 +445,45 @@ main{
 }
 
 /* Lo que hacemos */
+
 .historia{
     display: grid;
-    
 }
 
 .hleft{
-    background-image: url(../assets/imagenes/aside_left.jpg);
+    background-image: url("../assets/imagenes/aside_left.jpg");
     height: 500px;
     background-size: cover;
     background-position: center;
-    
 }
+
 .hright{
     padding: 20px;
     height: auto;
-    
 }
 
 .hright h3{
     text-align: center;
     height: auto;
+    font-family: 'Dancing Script', cursive;
 }
 
+.hright p{
+    padding-top: 20px;
+    font-family: 'Libre Franklin', sans-serif;
+}
 /* media queries */
 
 @media only screen and (min-width:480px){
-.fotos{
-    grid-template-columns: 1fr 1fr;
-    grid-row: 1fr;
-}
-
-.item3{
-    grid-column: 1/3;
-}
 
 .item4{
     height: 500px;
+    width: auto;
 }
 
 .item5{
     height: 750px;
+    width: 100%;
 }
 
 .item10{
@@ -558,15 +493,19 @@ main{
 .item12{
     height: 300px;
 }
+
 .item13{
     height: 300px;
 }
+
 .item14{
     height: 300px;
 }
+
 .item15{
     height: 300px;
 }
+
 .item16{
     height: 300px;
 }
@@ -574,58 +513,39 @@ main{
 
 
 @media only screen and (min-width:768px){
+
 .imgadopta{
     grid-template-columns: 1fr 1fr;
     grid-auto-rows: 1fr 1fr 1fr;
 }
+
 .item11{
     grid-column: 1/3;
 }
-
-
 
 .contgrid{
     grid-template-columns: 1fr 1fr;
 }
 
-.item3{
+/* .item3{
     grid-column: 2/3;
     grid-row: 1/2;
-}
-
-.fotos{
-    grid-template-columns: 1fr 1fr 1fr;
-}
+} */
 
 .imgconcientizacion{
     grid-template-columns: 50% 50%;
 }
-    
-.item6{
-    grid-column: 1/3;  
-}
-
-.item1:hover{
-    height: 300px;
-    transform: scale(1.1);
-    transition: 0.7s;
-}
-
-.item2:hover{
-    height: 300px;
-    transform: scale(1);
-    transition: 0.7s;
-    
-}
-
-.item3:hover{
-    height: 300px;
-    transform: scale(1.1);
-    transition: 0.7s;
-}
 
 .item4{
     height: auto;
+}
+
+.item5{
+    height: 800px;
+}
+
+.item6{
+    grid-column: 1/3;  
 }
 
 .parrafo{
@@ -676,33 +596,29 @@ footer{
     grid-column: 2/3;
 }
 
-#consulta{
-        
+#consulta{  
     text-align: center;
     margin-bottom: 10px;
-    text-align: center;
     margin-left: 213px;
     padding: 10px;
     width: 100px;
 }
 
 #botoncontact{
-    border-radius: 2px;
-    background-color: rgba(128, 128, 128, 0.692);
+    border-radius: 10px;
+    background-color: rgb(128 128 128 69.2%);
     margin-bottom: 10px;
     text-align: center;
     margin-top: 20px;
-    margin-left: 500px;
-    padding: 10px;
-    width: 100px;
+    margin-left: 300px;
+    padding: 5px;
+    width: 150px;
 }
 
 #botoncontact:hover{
-    background-color: rgba(219, 160, 49, 0.842);
+    background-color: rgba(34, 24, 6, 0.315);
     transition: all 0.5s;
 }
-
-
 
 .contenedrodona{
     grid-template-columns: 1fr 1fr;
@@ -720,10 +636,12 @@ footer{
     font-size: 30px;
     margin-top: 120px;
 }
+
 .imgdona{
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
 }
+
 .item16{
     grid-column: 1/3;
 }
@@ -739,25 +657,26 @@ footer{
 .hleft{
     grid-column: 1/2;
 }
+
+.hleft{
+    height: auto;
+}
 }
 
 
 
 @media only screen and (min-width:1024px){
-
 .contactformulario{
-        grid-template-columns: 1fr 1fr ;
-    }   
-.item5{
-        height: 800px;
-    }
-
-
-    
+    grid-template-columns: 1fr 1fr ;
+}   
 
 .imgadopta{
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr;
+}
+
+.item5{
+    height: 800px;
 }
 
 .item7{
@@ -781,6 +700,7 @@ footer{
     grid-row: 2/3;
     height: 500px;
 }
+
 .item11{
     grid-column: 2/3;
     grid-row: 2/3;
@@ -790,32 +710,99 @@ footer{
 .item16{
     height: auto;
 }
+
 .formcontact input{
     width: 500px;
 }
-#consulta{
-    width: 150px; 
+
+#botoncontact{
+    margin-left: 400px;
 }
+
+.ubi{
+    height: 400px;
+}
+
+#consulta{
+    width: 150px;
+}
+
 .hright{
     font-size: 15px;
 }
 
+footer{
+    height: 200px;
+}
+
+footer{
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 70% 30%;
+}
+
+.menuf{
+    grid-column: 1/2;
+    grid-row: 1/2;
+    margin-top: 10px;
+}
+
+.redes{
+    grid-column: 2/3;
+    
+}
+
+.contactanos{
+    grid-column: 3/4;
+    margin-top: 10px;
+}
+
+.copyright{
+    grid-column: 2/3;
+    grid-row: 2/3;
+}
+
 }
 @media only screen and (min-width:1200px){
-    .ubi{
-        width: 600px;
-        height: 400px;
-        margin-left: 100px;
-    }
 
+.ubi{
+    width: 600px;
+    height: 300px;
+    margin-left: 100px;
 }
 
+.hright h3{
+    font-size: 50px;
+}
 
+.hright p{
+    font-size: 20px;
+}
 
+.hleft{
+    height: auto;
+}
 
-        
+.menu a{
+    font-size: 20px;
+}
 
-    
+.contactanos h2{
+    font-size: 20px;  
+}
+
+.redes h2{
+    font-size: 20px; 
+}
+
+.redes a{
+    font-size: 20px; 
+}
+
+.copyright p{
+    font-size: 15px;
+}
+
+}
 
 
 
