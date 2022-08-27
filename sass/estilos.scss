@@ -1,0 +1,248 @@
+@import url("https://fonts.googleapis.com/css2?family=Oleo+Script+Swash+Caps&family=Pacifico&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Oleo+Script+Swash+Caps&family=Pacifico&family=Saira+Condensed:wght@300&display=swap');
+
+*{
+    margin: 0;  
+    padding: 0;
+}
+
+$color1: #1aaf6f;
+$letramedium: 20px;
+
+/*Lo que hacemos - Inicia*/
+.barra{
+    background-color: $color1;
+
+    .navbar-brand{
+        text-shadow: 0 0 5px #000;
+        font-size: $letramedium;
+    }
+
+    .nav-item{
+        font-size: $letramedium;
+    }
+
+    .navbar-brand::after{
+        margin-left: 10px;
+        content: "🐾" 
+    }
+}
+
+.historia{
+    display: grid;
+}
+
+.hleft{
+    background-image: url(../assets/imagenes/aside_left.jpg);
+    height: 500px;
+    background-size: cover;
+    background-position: center;
+}
+
+.hright{
+    padding: 20px;
+    height: auto;
+
+    h3{
+        text-align: center;
+        height: auto;
+        font-family: 'Dancing Script', cursive;
+    }
+
+    p{
+        padding-top: 20px;
+        font-family: 'Libre Franklin', sans-serif
+    }
+}
+
+footer{
+    display: grid;
+    background-color: $color1;
+    height: auto;
+}
+
+.redes{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-transform:capitalize;
+    text-align: center;
+    color: white;
+
+    img{
+        height: 100px;
+        width: 100px;
+    }
+
+    a{
+        color: white;
+        letter-spacing: 10px;
+    }
+    
+
+    h2{
+        font-size: 20px;
+    }
+}
+
+a:hover{
+    color: rgba(17, 11, 3, 0.575);
+}
+
+.menu{
+    margin-bottom: 10px;
+    text-transform:capitalize;
+    text-align: center;
+
+    a{
+        text-decoration: none;
+        color: white;    
+    }
+
+    a:hover{
+        color: rgba(17, 11, 3, 0.575);
+    }
+}
+
+.contactanos{
+    text-align: center;
+    color: white;
+
+    h2{
+        font-size: 15px;
+    }
+}
+
+.copyright{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 15px;
+    color: white;
+    text-align: center;
+}
+
+.subir{
+    height: 40px;
+    width: 40px;
+    background-color: white;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    text-align: center;
+    line-height: 40px;
+    color: #1aaf6f;
+    border-radius: 50%;
+    border: 2px solid color #1aaf6f;
+    font-size: 22px;
+
+}
+
+/*Lo que hacemos - Finaliza*/
+
+@media only screen and (min-width:768px){
+
+
+/*Lo que hacemos - Inicia*/
+
+.historia{
+    grid-template-columns: 1fr 1fr;
+}
+    
+.hright{
+    grid-column: 2/3;
+}
+    
+.hleft{
+    grid-column: 1/2;
+}
+    
+.hleft{
+        height: auto;
+    }
+}
+
+footer{
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+
+.menuf{
+    grid-column: 1/2;
+}
+
+.redes{
+    grid-column: 2/3;
+    margin-top: 20px;
+}
+
+.contactanos{
+    grid-column: 3/4;
+}
+
+.copyright{
+    grid-column: 2/3;
+}
+
+/*Lo que hacemos - Finaliza*/
+
+@media only screen and (min-width:1024px){
+
+/*Lo que hacemos - Inicia*/
+
+.hright{
+    h3{
+        font-size: 50px;
+    }
+    
+    p{
+        font-size: $letramedium;
+    }
+}
+
+.hleft{
+    height: auto;
+}
+
+footer{
+    height: 200px;
+}
+
+footer{
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 70% 30%;
+}
+
+.menuf{
+    grid-column: 1/2;
+    grid-row: 1/2;
+    margin-top: 10px;
+}
+
+.redes{
+    grid-column: 2/3;
+    font-size: $letramedium;
+}
+
+}
+
+.contactanos{
+    margin-top: 10px;
+    h2{
+        font-size: $letramedium;;
+            
+    }
+
+.copyright{
+    p{
+        font-size: $letramedium;
+    }
+}
+}
+/*Lo que hacemos - Finaliza*/
+
+
+
+
+
+
+
+
