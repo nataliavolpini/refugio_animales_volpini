@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Oleo+Script+Swash+Caps&family=Pacifico&display=swap");
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Oleo+Script+Swash+Caps&family=Pacifico&family=Saira+Condensed:wght@300&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=DynaPuff&family=Libre+Franklin:wght@200&family=Oleo+Script+Swash+Caps&family=Pacifico&family=Saira+Condensed:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=DynaPuff&family=Libre+Franklin:wght@200&family=Oleo+Script+Swash+Caps&family=Pacifico&family=Saira+Condensed:wght@300&family=Secular+One&display=swap');
 *{
     margin: 0;
     padding: 0;
@@ -8,8 +9,23 @@
 }
 
 html{
-    scroll-behavior: smooth;
+    scroll-behavior: smooth ;
 }
+.subir{
+    height: 40px;
+    width: 40px;
+    background-color: white;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    text-align: center;
+    line-height: 40px;
+    color: #1aaf6f;
+    border-radius: 50%;
+    border: 2px solid color #1aaf6f;
+
+}
+
 .barra{
     background-color: #1aaf6f;
 }
@@ -31,6 +47,8 @@ html{
 .carousel-inner {
     height: 500px;
 }
+
+
 
 .item {
     height: 200px;
@@ -75,7 +93,27 @@ iframe {
     border: 2px solid;
 }
 
-.container {
+.imginicio{
+    background-image: url(../assets/imagenes/castracion.jpg);
+    background-size: cover;
+    width: auto;
+    height: 500px;
+}
+
+.imginicio h2{
+    font-family: 'DynaPuff', cursive;
+    color: orange;
+    text-align: center;
+    margin: 5px;
+    
+}
+
+.imginicio p{
+    font-family: 'Saira Condensed', sans-serif;
+    color: white;
+    text-align: center;
+}
+/* .container {
     border: 2px solid;
     background-color: rgb(64 131 131);
     width: 100%;
@@ -114,10 +152,10 @@ iframe {
     margin-left: 130px;
     padding: 10px;
     width: 100px;
-}
+} */
 
 .item4 {
-    background-image: url("../assets/imagenes/pirotecnia_psv.PNG");
+    background-image: url("../assets/imagenes//pirotecnia.jpg");
     width: auto;
     height: 350px;
     background-size: cover;
@@ -125,13 +163,41 @@ iframe {
     border: 2px solid;
 }
 
+.item4 h2{
+    font-family: 'DynaPuff', cursive;
+    color: orange;
+    text-align: center;
+    
+}
+
+.item4 p{
+    font-family: 'Saira Condensed', sans-serif;
+    color: white;
+    text-align: center;
+}
+
 .item5 {
-    background-image: url("../assets/imagenes/maltrato_psv.PNG");
+    background-image: url("../assets/imagenes/maltrato.jpg");
     width: auto;
     height: 500px;
     background-size: cover;
     background-position: center;
     border: 2px solid;
+    
+}
+
+.item5 h2{
+    font-family: 'DynaPuff', cursive;
+    color: orange;
+    text-align: center;
+}
+
+.item5 p{
+    font-family: 'Saira Condensed', sans-serif;
+    color: white;
+    text-align: center;
+    color: red;
+    font-weight: bold;
 }
 
 footer {
@@ -194,23 +260,6 @@ a:hover{
     text-align: center;
 }
 
-.subir{
-    height: 40px;
-    width: 40px;
-    background-color: white;
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    text-align: center;
-    line-height: 40px;
-    color: #1aaf6f;
-    border-radius: 50%;
-    border: 2px solid color #1aaf6f;
-    font-size: 22px;
-
-}
-
-
 .contgrid{
     display: grid;
 }
@@ -258,6 +307,7 @@ a:hover{
 
 .item7{
     background-image: url("../assets/imagenes/adopta8.jpg");
+    background-size: cover;
     width: auto;
     height: 300px;
     filter: grayscale(100%);
@@ -271,6 +321,7 @@ a:hover{
 
 .item8{
     background-image: url("../assets/imagenes/adopta7.jpg");
+    background-size: cover;
     width: auto;
     height: 300px;
     filter: grayscale(100%);
@@ -284,6 +335,7 @@ a:hover{
 
 .item9{
     background-image: url("../assets/imagenes/adopta6.jpg");
+    background-size: cover;
     width: auto;
     height: 300px;
     filter: grayscale(100%);
@@ -297,6 +349,7 @@ a:hover{
 
 .item10{
     background-image: url("../assets/imagenes/adopta5.jpg");
+    background-size: cover;
     width: auto;
     height: 300px;
     filter: grayscale(100%);
@@ -310,6 +363,7 @@ a:hover{
 
 .item11{
     background-image: url("../assets/imagenes/adopta4.webp");
+    background-size: cover;
     width: auto;
     height: 300px;
     filter: grayscale(100%);
@@ -366,7 +420,7 @@ main{
 .formcontact h2{
     text-align: center;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    color: rgb(0 0 0 63%)
+    color: rgba(0, 0, 0, 0.603)
 }
 
 .contacto label{
@@ -406,7 +460,7 @@ main{
 
 .ubicacion h2{
     text-align: center;
-    color: rgb(0 0 0 63%);
+    color: rgba(0, 0, 0, 0.603);
     display: grid;
 }
 
@@ -453,6 +507,9 @@ main{
     background-color: rgb(2 15 26 87%);
     color: rgb(0 0 0 62.3%);
 }
+.card-body{
+    text-align: center;
+}
 
 .carousel img{
     display: block;
@@ -495,14 +552,49 @@ main{
 
 @media only screen and (min-width:480px){
 
+.item5 {
+    background-image: url("../assets/imagenes/maltrato.jpg");
+    width: auto;
+    height: 500px;
+    background-size: cover;
+    background-position: center;
+    border: 2px solid;
+}
+
+
+
+.imginicio h2{
+    margin-top: 20px;
+
+}
+
+.imginicio p{
+    font-size: 20px;
+}
 .item4{
     height: 500px;
-    width: auto;
+    width: 100%;
+}
+
+.item4 h2{
+    margin-top: 10px;
+}
+
+.item4 p{
+    font-size: 20px;
 }
 
 .item5{
     height: 750px;
     width: 100%;
+}
+
+.item5 h2{
+    margin-top: 10px;
+}
+
+.item5 p{
+    font-size: 20px;
 }
 
 .item10{
@@ -543,9 +635,16 @@ main{
 }
 
 .contgrid{
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 50% 50%;
 }
 
+iframe{
+    grid-column: 1/2;
+}
+
+.imginicio{
+    grid-column: 2/3;
+}
 /* .item3{
     grid-column: 2/3;
     grid-row: 1/2;
@@ -694,8 +793,22 @@ footer{
     grid-template-rows: 1fr 1fr;
 }
 
+.imginicio p{
+    font-size: 30px;
+}
+
 .item5{
     height: 800px;
+}
+
+.item5 p{
+    font-size: 30px;
+}
+
+.item4 p{
+    font-size: 30px;
+    margin-left: 10px;
+    margin-right: 10px;
 }
 
 .item7{
