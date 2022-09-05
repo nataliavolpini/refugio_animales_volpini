@@ -16,7 +16,7 @@
   background-image: linear-gradient(to right, rgba(255, 255, 255, 0.199), rgba(255, 255, 255, 0.555)), url(../assets/imagenes/fondo_huesitos.jpg);
   background-size: cover;
 }
-.parrafo h2 {
+.parrafo h1 {
   -webkit-animation-duration: 2s;
           animation-duration: 2s;
   -webkit-animation-name: aparecer;
@@ -28,6 +28,7 @@
   -webkit-animation-iteration-count: infinite;
           animation-iteration-count: infinite;
   padding-top: 25px;
+  font-size: 30px;
 }
 
 @-webkit-keyframes aparecer {
@@ -48,9 +49,9 @@
   }
 }
 iframe {
-  width: 100%;
   height: 500px;
   border: 2px solid;
+  width: 100%;
 }
 
 .imginicio {
@@ -58,12 +59,12 @@ iframe {
   background-size: cover;
   width: auto;
   height: 500px;
+  margin-top: 0px;
 }
 .imginicio h2 {
   font-family: "DynaPuff", cursive;
   color: orange;
   text-align: center;
-  margin: 5px;
   margin-top: 10px;
 }
 .imginicio p {
@@ -71,7 +72,7 @@ iframe {
   color: white;
   text-align: center;
   letter-spacing: 2px;
-  margin: 0 10px 0 10px;
+  padding: 0 10px 0 10px;
   font-size: 20px;
 }
 
@@ -94,7 +95,7 @@ iframe {
   color: white;
   text-align: center;
   letter-spacing: 2px;
-  margin: 0 10px 0 10px;
+  padding: 0 10px 0 10px;
   font-size: 20px;
 }
 
@@ -119,7 +120,7 @@ iframe {
   color: red;
   font-weight: bold;
   letter-spacing: 2px;
-  margin: 0 10px 0 10px;
+  padding: 0 10px 0 10px;
   font-size: 20px;
 }
 
@@ -131,6 +132,12 @@ iframe {
   display: grid;
 }
 
+@media only screen and (min-width: 480px) {
+  .parrafo h1 {
+    font-size: 40px;
+    padding: 0 10px 0 10px;
+  }
+}
 @media only screen and (min-width: 850px) {
   .parrafo {
     height: 150px;
@@ -201,7 +208,7 @@ iframe {
   padding: 20px;
   height: auto;
 }
-.hright h3 {
+.hright h1 {
   text-align: center;
   height: auto;
   font-family: "Dancing Script", cursive;
@@ -218,8 +225,7 @@ footer {
 }
 
 .redes {
-  margin-top: 10px;
-  margin-bottom: 10px;
+  margin: 10px 0 10px 0;
   text-transform: capitalize;
   text-align: center;
   color: white;
@@ -262,8 +268,7 @@ a:hover {
 }
 
 .copyright {
-  margin-top: 20px;
-  margin-bottom: 20px;
+  margin: 20px 0 20px 0;
   font-size: 15px;
   color: white;
   text-align: center;
@@ -284,6 +289,10 @@ a:hover {
   font-size: 22px;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 /*Lo que hacemos - Finaliza*/
 /*Donaciones - Inicia*/
 .jumbotron {
@@ -301,11 +310,17 @@ a:hover {
 .jumbotron p::selection {
   color: rgba(28, 116, 50, 0.651);
 }
-.jumbotron h2::-moz-selection {
+.jumbotron h1::-moz-selection {
   color: rgba(28, 116, 50, 0.651);
 }
-.jumbotron h2::selection {
+.jumbotron h1::selection {
   color: rgba(28, 116, 50, 0.651);
+}
+.jumbotron p {
+  font-size: 20px;
+}
+.jumbotron h1 {
+  font-size: 25px;
 }
 
 .canalesdona {
@@ -349,7 +364,7 @@ a:hover {
   margin: 5px;
 }
 
-.item7 {
+.item7, .item11, .item10, .item9, .item8 {
   background-image: url("../assets/imagenes/adopta8.jpg");
   background-size: cover;
   width: auto;
@@ -357,7 +372,7 @@ a:hover {
   filter: grayscale(100%);
 }
 
-.item7:hover {
+.item7:hover, .item11:hover, .item10:hover, .item9:hover, .item8:hover {
   transform: scale(1.04);
   transition: all 0.8s;
   filter: grayscale(0%);
@@ -365,10 +380,7 @@ a:hover {
 
 .item8 {
   background-image: url("../assets/imagenes/adopta7.jpg");
-  background-size: cover;
-  width: auto;
-  height: 300px;
-  filter: grayscale(100%);
+  background-position: center;
 }
 
 .item8:hover {
@@ -379,10 +391,6 @@ a:hover {
 
 .item9 {
   background-image: url("../assets/imagenes/adopta6.jpg");
-  background-size: cover;
-  width: auto;
-  height: 300px;
-  filter: grayscale(100%);
 }
 
 .item9:hover {
@@ -393,10 +401,7 @@ a:hover {
 
 .item10 {
   background-image: url("../assets/imagenes/adopta5.jpg");
-  background-size: cover;
-  width: auto;
-  height: 300px;
-  filter: grayscale(100%);
+  background-position: right;
 }
 
 .item10:hover {
@@ -407,10 +412,6 @@ a:hover {
 
 .item11 {
   background-image: url("../assets/imagenes/adopta4.webp");
-  background-size: cover;
-  width: auto;
-  height: 300px;
-  filter: grayscale(100%);
 }
 
 .item11:hover {
@@ -427,18 +428,19 @@ a:hover {
   padding-bottom: 15px;
 }
 .adopta2 img {
-  height: 50px;
   width: 50px;
-  padding-bottom: 8px;
-  padding-left: 10px;
+  height: 50px;
+  padding: 0 0 8px 10px;
 }
-.adopta2 h2 {
+.adopta2 h1 {
   margin-top: 20px;
-  padding-bottom: 10px;
-  padding-left: 10px;
+  padding: 0 0 10px 10px;
 }
 .adopta2 h3 {
-  padding-left: 10px;
+  padding-left: 20px;
+}
+.adopta2 p {
+  margin: 7px;
 }
 
 /*Adopciones - Finaliza*/
@@ -462,6 +464,7 @@ main {
   text-align: center;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   color: rgba(0, 0, 0, 0.596);
+  padding-bottom: 10px;
 }
 
 .contacto {
@@ -480,17 +483,15 @@ main {
 }
 .contacto #consulta {
   text-align: center;
-  margin-bottom: 10px;
-  margin-left: 50px;
+  margin: 0 0 10px 50px;
   padding: 10px;
   width: 50px;
 }
 .contacto #botoncontact {
   border-radius: 10px;
   background-color: rgba(17, 49, 4, 0.384);
-  margin-bottom: 5px;
+  margin: 0 0 5px 100px;
   text-align: center;
-  margin-left: 300px;
   padding: 5px;
   width: 150px;
 }
@@ -509,10 +510,8 @@ main {
 }
 
 .redes1 {
-  margin-left: 10px;
-  margin-top: 30px;
+  margin: 30px 0 0 10px;
   text-align: center;
-  margin-bottom: 0;
   padding-bottom: 20px;
   font-weight: bold;
 }
@@ -526,6 +525,9 @@ main {
 @media only screen and (min-width: 480px) {
   .item10 {
     background-position: right;
+  }
+  .contacto input {
+    width: 300px;
   }
 }
 @media only screen and (min-width: 768px) {
@@ -573,21 +575,28 @@ main {
   #botoncontact {
     border-radius: 10px;
     background-color: rgba(128, 128, 128, 0.658);
-    margin-bottom: 10px;
+    margin-right: 400px;
     text-align: center;
-    margin-top: 20px;
-    margin-left: 300px;
     padding: 5px;
     width: 150px;
   }
+  .ubicacion h2 {
+    margin-top: 15px;
+  }
   .ubi {
     height: 500px;
+    margin: 20px 0px 0 10px;
+    padding-left: 10px;
+  }
+  .contacto input {
+    width: 500px;
+    text-align: center;
   }
   /*Contacto - Finaliza*/
 }
 @media only screen and (min-width: 1024px) {
   /*Lo que hacemos - Inicia*/
-  .hright h3 {
+  .hright h1 {
     font-size: 50px;
   }
   .hright p {
@@ -628,7 +637,7 @@ main {
     height: 400px;
   }
   #botoncontact {
-    margin-left: 400px;
+    margin-left: 700px;
   }
   .formcontact input {
     width: 500px;
@@ -638,13 +647,19 @@ main {
   .carousel-inner {
     height: 500px;
   }
+  .jumbotron h1 {
+    font-size: 40px;
+  }
+  .jumbotron p {
+    font-size: 35px;
+  }
   /*Dona - Finaliza*/
   /*Adopta - Inicia*/
   .imgadopta {
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr;
   }
-  .item7 {
+  .item7, .item8, .item9, .item10, .item11 {
     grid-column: 1/2;
     height: 500px;
     background-position: center;
@@ -667,6 +682,7 @@ main {
     grid-column: 2/3;
     grid-row: 2/3;
     height: 500px;
+    background-position: left;
   }
 }
 /*Adopta - Finaliza*/
