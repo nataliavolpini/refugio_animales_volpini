@@ -29,12 +29,14 @@ $letramedium: 20px;
 
     .nav-item{
         font-size: $letramedium;
+        
     }
 
     .navbar-brand::after{
         margin-left: 10px;
         content: "🐾" 
     }
+
 }
 
 .historia{
@@ -182,13 +184,13 @@ html{
     margin: 0;
     font-family: 'DynaPuff', cursive;
 }
-
-// .mp{
-//     background-color: rgba(2, 15, 26, 0.87);
-//     color: rgba(0, 0, 0, 0.623);
-// }
 .card-body{
     text-align: center;
+    
+}
+
+.card{
+    border: 2px solid grey;
 }
 
 .carousel img{
@@ -323,7 +325,7 @@ main{
 .formcontact{
     margin: 10px;
     display: block;
-    padding: 5px ;
+    padding: 5px;
     
 
     h2{
@@ -376,6 +378,7 @@ main{
 
 .ubicacion{
     height: auto;
+    width: 100%;
     
     h2{
         text-align: center;
