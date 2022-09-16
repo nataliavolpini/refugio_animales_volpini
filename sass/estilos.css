@@ -60,7 +60,6 @@
   background-position: center;
   width: auto;
   height: 300px;
-  filter: grayscale(100%);
 }
 
 .item12:hover, .item19:hover, .item18:hover, .item17:hover, .item16:hover, .item15:hover, .item14:hover, .item13:hover {
@@ -252,10 +251,6 @@ footer {
   font-size: 20px;
 }
 
-a:hover {
-  color: rgba(17, 11, 3, 0.575);
-}
-
 .menu {
   margin-bottom: 10px;
   text-transform: capitalize;
@@ -275,6 +270,10 @@ a:hover {
 }
 .contactanos h2 {
   font-size: 15px;
+}
+
+a:hover {
+  color: rgba(17, 11, 3, 0.575);
 }
 
 .copyright {
@@ -367,7 +366,7 @@ html {
   padding-bottom: 20px;
   margin: 0;
   text-align: center;
-  color: rgb(38, 238, 20);
+  color: white;
   padding-top: 10px;
 }
 
@@ -516,7 +515,6 @@ main {
 
 .ubicacion {
   height: auto;
-  width: 100%;
 }
 .ubicacion h2 {
   text-align: center;
@@ -543,6 +541,9 @@ main {
   }
   .contacto input {
     width: 300px;
+  }
+  iframe {
+    width: 100%;
   }
 }
 @media only screen and (min-width: 768px) {
@@ -607,8 +608,8 @@ main {
     width: 500px;
     text-align: center;
   }
-  /*Contacto - Finaliza*/
 }
+/*Contacto - Finaliza*/
 @media only screen and (min-width: 1024px) {
   /*Lo que hacemos - Inicia*/
   .hright h1 {
