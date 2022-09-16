@@ -1,0 +1,644 @@
+@import url("https://fonts.googleapis.com/css2?family=Oleo+Script+Swash+Caps&family=Pacifico&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Oleo+Script+Swash+Caps&family=Pacifico&family=Saira+Condensed:wght@300&display=swap');
+
+*{
+    margin: 0;  
+    padding: 0;
+}
+
+$color1: #1aaf6f;
+$letramedium: 20px;
+
+@import "_index";
+
+@mixin altanch ($widht, $height){
+    width: $widht;
+    height: $height;
+}
+
+/*Lo que hacemos - Inicia*/
+.barra{
+    background-color: $color1;
+
+    .navbar-brand{
+        text-shadow: 0 0 5px #000;
+        font-size: $letramedium;
+    }
+
+    .nav-item{
+        font-size: $letramedium;
+        
+    }
+
+    .navbar-brand::after{
+        margin-left: 10px;
+        content: "🐾" 
+    }
+}
+
+.historia{
+    display: grid;
+}
+
+.hleft{
+    background-image: url(../assets/imagenes/aside_left.jpg);
+    height: 500px;
+    background-size: cover;
+    background-position: center;
+}
+
+.hright{
+    padding: 20px;
+    height: auto;
+
+    h1{
+        text-align: center;
+        height: auto;
+        font-family: 'Dancing Script', cursive;
+    }
+
+    p{
+        padding-top: 20px;
+        font-family: 'Libre Franklin', sans-serif
+    }
+}
+
+footer{
+    display: grid;
+    background-color: $color1;
+    height: auto;
+}
+
+.redes{
+    margin: 10px 0 10px 0 ;
+    text-transform:capitalize;
+    text-align: center;
+    color: white;
+
+    img{
+        height: 100px;
+        width: 100px;
+    }
+
+    a{
+        color: white;
+        letter-spacing: 10px;
+    }
+
+    h2{
+        font-size: 20px;
+    }
+}
+
+
+
+
+
+.menu{
+    margin-bottom: 10px;
+    text-transform:capitalize;
+    text-align: center;
+
+    a{
+        text-decoration: none;
+        color: white;    
+    }
+
+    a:hover{
+        color: rgba(17, 11, 3, 0.575);
+    }
+}
+
+.contactanos{
+    text-align: center;
+    color: white;
+
+    h2{
+        font-size: 15px;
+    }
+}
+
+a:hover{
+    color: rgba(17, 11, 3, 0.575);
+}
+
+.copyright{
+    margin: 20px 0 20px 0 ;
+    font-size: 15px;
+    color: white;
+    text-align: center;
+}
+
+.subir{
+    height: 40px;
+    width: 40px;
+    background-color: white;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    text-align: center;
+    line-height: 40px;
+    color: #1aaf6f;
+    border-radius: 50%;
+    border: 2px solid color #1aaf6f;
+    font-size: 22px;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+/*Lo que hacemos - Finaliza*/
+
+/*Donaciones - Inicia*/
+
+.jumbotron{
+    background-image: linear-gradient(to right,rgba(255, 255, 255, 0.267), rgba(255, 255, 255, 0.555)), url(../assets/imagenes/jumbotromp.webp); 
+    background-size: cover;
+    color: rgba(2, 15, 26, 0.87);
+    border-radius: 0;
+    margin: 0px;
+    height: 370px;
+    font-size: 20px;  
+    
+    p::selection{
+        color: rgba(28, 116, 50, 0.651);
+    }
+
+    h1::selection{
+        color: rgba(28, 116, 50, 0.651);
+    }
+
+    p{
+        font-size: 20px;
+    }
+
+    h1{
+        font-size: 25px;
+    }
+}
+
+.canalesdona{
+    background-color: #1aaf6f ;
+    text-align: center;
+    padding: 10px;
+    color: white;
+    margin: 0;
+    font-family: 'DynaPuff', cursive;
+}
+.card-body{
+    text-align: center;
+}
+
+.card{
+    border: 2px solid grey;
+}
+
+.carousel img{
+    display: block;
+    height: 600px;
+    max-width: 100%;
+    line-height: 1;
+    width: 100%;
+    object-fit: cover;
+}
+
+/*Donaciones - Finaliza*/
+
+/*Adopciones - Inicia*/
+
+.galeria{
+    background-image: url("../assets/imagenes/fondo_galeria.jpg");
+    padding-bottom: 20px;
+    margin: 0;
+    text-align: center;
+    color: white;
+    padding-top: 10px;
+}
+
+.imgadopta{
+    display: grid;
+    grid-gap: 10px ;
+    background-image: url("../assets/imagenes/fondo_galeria.jpg");
+    margin: 5px;
+}
+
+.item7{
+    background-image: url("../assets/imagenes/adopta8.jpg");
+    background-size: cover;
+    width: auto;
+    height: 300px;
+    filter: grayscale(100%);
+}
+
+.item7:hover{
+    transform: scale(1.04);
+    transition: all 0.8s;
+    filter: grayscale(0%);
+}
+
+.item8{
+    background-image: url("../assets/imagenes/adopta7.jpg");
+    @extend .item7;
+    background-position: center;
+}
+
+.item8:hover{
+    transform: scale(1.04);
+    transition: all 0.8s;
+    filter: grayscale(0%);
+}
+
+.item9{
+    background-image: url("../assets/imagenes/adopta6.jpg");
+    @extend .item7;
+}
+
+.item9:hover{
+    transform: scale(1.04);
+    transition: all 0.8s;
+    filter: grayscale(0%);
+}
+
+.item10{
+    background-image: url("../assets/imagenes/adopta5.jpg");
+    @extend .item7;
+    background-position: right ;
+}
+
+.item10:hover{
+    transform: scale(1.04);
+    transition: all 0.8s;
+    filter: grayscale(0%);
+}
+
+.item11{
+    background-image: url("../assets/imagenes/adopta4.webp");
+    @extend .item7;
+}
+
+.item11:hover{
+    transform: scale(1.04);
+    transition: all 0.8s;
+    filter: grayscale(0%);
+}
+
+.adopta2{
+    background-image: url("../assets/imagenes/fondo_patitas.jpg");
+    background-size: cover;
+    padding-left: 10px;
+    padding-top: 5px;
+    padding-bottom: 15px;
+
+    img{
+        @include altanch(50px, 50px);
+        padding: 0 0 8px 10px;   
+    }
+
+    h1{
+        margin-top: 20px;
+        padding: 0 0 10px 10px; 
+    }
+
+    h3{
+        padding-left: 20px;    
+    }
+
+    p{
+        margin: 7px;
+    }
+}
+
+/*Adopciones - Finaliza*/
+
+/*Contactanos - Inicia*/
+
+main{
+    background-image: url("../assets/imagenes/fondo_galeria.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.contactformulario{
+    display: grid;
+}
+
+.formcontact{
+    margin: 10px;
+    display: block;
+    padding: 5px;
+
+    h2{
+        text-align: center;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        color: rgba(0, 0, 0, 0.596);
+        padding-bottom: 10px; 
+    }
+}
+
+.contacto{
+    margin-top: 20px;
+
+    label{
+        text-align: left;
+        display: inline-block;
+        width: 80px;
+    }
+
+    input{
+        width: auto;
+        text-align: left;
+        padding: 3px;
+        margin: 10px;
+    }
+
+    #consulta{
+        text-align: center;
+        margin: 0 0 10px 50px;
+        padding: 10px;
+        width: 50px;
+    }
+    
+    #botoncontact{
+        border-radius: 10px;
+        background-color: rgba(17, 49, 4, 0.384);
+        margin: 0 0 5px 100px;
+        text-align: center;
+        padding: 5px;
+        width: 150px;
+    }
+
+    #botoncontact:hover{
+        background-color: rgba(34, 24, 6, 0.315);
+        transition: all 0.5s;
+    }
+}
+
+.ubicacion{
+    height: auto;
+
+    h2{
+        text-align: center;
+        color: rgba(0, 0, 0, 0.596);
+        display: grid;
+    }
+}
+
+.redes1{
+    margin: 30px 0 0 10px;
+    text-align: center;
+    padding-bottom: 20px;
+    font-weight: bold;
+
+    i{
+        padding-left: 10px;
+        font-size: 15px;
+        font-weight: bold;
+    }
+}
+
+/*Contactanos - Finaliza*/
+
+@media only screen and (min-width:480px){
+.item10{
+    background-position: right;
+}
+
+.contacto{
+    input{
+        width: 300px;
+    }
+}
+
+iframe{
+    width: 100%;
+}
+}
+
+@media only screen and (min-width:768px){
+
+
+/*Lo que hacemos - Inicia*/
+
+.historia{
+    grid-template-columns: 1fr 1fr;
+}
+    
+.hright{
+    grid-column: 2/3;
+}
+    
+.hleft{
+    grid-column: 1/2;
+}
+
+.hleft{
+    height: auto;
+}
+
+footer{
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+
+.menuf{
+    grid-column: 1/2;
+}
+
+.redes{
+    grid-column: 2/3;
+    margin-top: 20px;
+}
+
+.contactanos{
+    grid-column: 3/4;
+}
+
+.copyright{
+    grid-column: 2/3;
+}
+
+/*Lo que hacemos - Finaliza*/
+
+/*Adopta - Inicia*/
+.imgadopta{
+    grid-template-columns: 1fr 1fr;
+    grid-auto-rows: 1fr 1fr 1fr;
+}
+
+.item11{
+    grid-column: 1/3;
+}
+
+/*Adopta - Finaliza*/
+
+/*Contacto - Inicia*/
+
+#botoncontact{
+    border-radius: 10px;
+    background-color: rgba(128, 128, 128, 0.658);
+    margin-right: 400px;
+    text-align: center;
+    padding: 5px;
+    width: 150px;
+}
+.ubicacion{
+    h2{
+        margin-top: 15px;
+    }
+}
+.ubi{
+    height: 500px;
+    margin: 20px 0px 0 10px;
+    padding-left: 10px;
+    
+}
+
+.contacto{
+    input{
+        width: 500px;
+        text-align: center;
+    }
+}
+}
+
+/*Contacto - Finaliza*/
+
+
+@media only screen and (min-width:1024px){
+
+/*Lo que hacemos - Inicia*/
+
+.hright{
+
+    h1{
+        font-size: 50px;
+    }
+
+    p{
+        font-size: $letramedium;
+    }
+}
+
+.hleft{
+    height: auto;
+}
+
+
+footer{
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 70% 30%;
+    height: 200px;
+}
+
+.menuf{
+    grid-column: 1/2;
+    grid-row: 1/2;
+    margin-top: 10px;
+}
+
+.redes{
+    grid-column: 2/3;
+    font-size: $letramedium;
+}
+
+.contactanos{
+    margin-top: 10px;
+    
+    h2{
+        font-size: $letramedium;;
+    }
+
+.copyright{
+    p{
+        font-size: $letramedium;
+    }
+}
+}
+/*Lo que hacemos - Finaliza*/
+
+/*Contactanos - Inicia*/
+
+.contactformulario{
+    grid-template-columns: 1fr 1fr ;
+}  
+
+.ubi{
+    height: 400px;
+}
+
+#botoncontact{
+    margin-left: 700px;
+}
+
+.formcontact input{
+    width: 500px;
+}
+/*Contactanos - Finaliza*/
+
+
+/*Dona - Inicia*/
+.carousel-inner{
+    height: 500px;
+}
+
+.jumbotron{
+
+    h1{
+        font-size: 40px;
+    }
+
+    p{
+        font-size: 35px;
+    }
+}
+
+/*Dona - Finaliza*/
+
+
+/*Adopta - Inicia*/
+.imgadopta{
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+
+.item7{
+    grid-column: 1/2;
+    height: 500px;
+    background-position: center;
+}
+
+.item8{
+    height: 500px;
+    grid-column: 2/4;
+}
+
+.item9{
+    grid-column: 3/4;
+    height: 500px;
+}
+
+.item10{
+    grid-column: 1/2;
+    grid-row: 2/3;
+    height: 500px;
+    background-position: center;
+}
+
+.item11{
+    grid-column: 2/3;
+    grid-row: 2/3;
+    height: 500px;
+    background-position:left;
+}
+}
+/*Adopta - Finaliza*/
+
+@media only screen and (min-width:1200px){
+.ubi{
+    @include altanch(600px, 300px);
+    margin-left: 100px;
+}
+
+}
+

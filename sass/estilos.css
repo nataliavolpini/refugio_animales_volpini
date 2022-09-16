@@ -1,0 +1,711 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Oleo+Script+Swash+Caps&family=Pacifico&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script&family=Oleo+Script+Swash+Caps&family=Pacifico&family=Saira+Condensed:wght@300&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.parrafo {
+  font-family: "Oleo Script Swash Caps", cursive;
+  text-transform: capitalize;
+  font-size: 30px;
+  height: 250px;
+  text-align: center;
+  padding: 10px;
+  background-image: linear-gradient(to right, rgba(255, 255, 255, 0.199), rgba(255, 255, 255, 0.555)), url(../assets/imagenes/fondo_patitas.jpg);
+  background-size: cover;
+}
+.parrafo h1 {
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-name: aparecer;
+          animation-name: aparecer;
+  -webkit-animation-delay: 5s;
+          animation-delay: 5s;
+  -webkit-animation-direction: alternate;
+          animation-direction: alternate;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  padding-top: 25px;
+  font-size: 30px;
+}
+
+@-webkit-keyframes aparecer {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes aparecer {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.imgindex {
+  display: grid;
+  grid-gap: 15px;
+  padding: 10px;
+}
+
+.item12, .item19, .item18, .item17, .item16, .item15, .item14, .item13 {
+  background-image: url(../assets/imagenes/item12.jpg);
+  background-size: cover;
+  background-position: center;
+  width: auto;
+  height: 300px;
+}
+
+.item12:hover, .item19:hover, .item18:hover, .item17:hover, .item16:hover, .item15:hover, .item14:hover, .item13:hover {
+  transform: scale(1.04);
+  transition: all 0.8s;
+  filter: grayscale(0%);
+}
+
+.item13 {
+  background-image: url(../assets/imagenes/item13.jpg);
+}
+
+.item13:hover {
+  transform: scale(1.04);
+  transition: all 0.8s;
+  filter: grayscale(0%);
+}
+
+.item14 {
+  background-image: url(../assets/imagenes/item14.jpg);
+}
+
+.item14:hover {
+  transform: scale(1.04);
+  transition: all 0.8s;
+  filter: grayscale(0%);
+}
+
+.item15 {
+  background-image: url(../assets/imagenes/item15.jpg);
+}
+
+.item15:hover {
+  transform: scale(1.04);
+  transition: all 0.8s;
+  filter: grayscale(0%);
+}
+
+.item16 {
+  background-image: url(../assets/imagenes/item16.jpg);
+}
+
+.item16:hover {
+  transform: scale(1.04);
+  transition: all 0.8s;
+  filter: grayscale(0%);
+}
+
+.item17 {
+  background-image: url(../assets/imagenes/item17.jpg);
+}
+
+.item17:hover {
+  transform: scale(1.04);
+  transition: all 0.8s;
+  filter: grayscale(0%);
+}
+
+.item18 {
+  background-image: url(../assets/imagenes/item18.jpg);
+}
+
+.item18:hover {
+  transform: scale(1.04);
+  transition: all 0.8s;
+  filter: grayscale(0%);
+}
+
+.item19 {
+  background-image: url(../assets/imagenes/item19.jpg);
+}
+
+.item19:hover {
+  transform: scale(1.04);
+  transition: all 0.8s;
+  filter: grayscale(0%);
+}
+
+@media only screen and (min-width: 480px) {
+  .parrafo {
+    height: 200px;
+  }
+  .parrafo h1 {
+    font-size: 35px;
+    padding: 0 10px 0 10px;
+  }
+}
+@media only screen and (min-width: 580px) {
+  .imgindex {
+    grid-template-columns: 1fr 1fr;
+  }
+  .imgindex .item16 {
+    grid-column: 1/3;
+  }
+  .imgindex .item19 {
+    grid-column: 1/3;
+  }
+}
+@media only screen and (min-width: 850px) {
+  .parrafo {
+    height: 150px;
+  }
+  .parrafo h2 {
+    font-size: 30px;
+    letter-spacing: 1px;
+  }
+  .item16 {
+    height: 500px;
+  }
+  .item19 {
+    height: 500px;
+  }
+}
+@media only screen and (min-width: 1100px) {
+  .item12, .item13, .item14, .item15, .item16, .item17, .item18, .item19 {
+    height: 500px;
+  }
+}
+@media only screen and (min-width: 1500px) {
+  .parrafo {
+    height: 150px;
+  }
+  .parrafo h1 {
+    padding-top: 50px;
+  }
+}
+/*Lo que hacemos - Inicia*/
+.barra {
+  background-color: #1aaf6f;
+}
+.barra .navbar-brand {
+  text-shadow: 0 0 5px #000;
+  font-size: 20px;
+}
+.barra .nav-item {
+  font-size: 20px;
+}
+.barra .navbar-brand::after {
+  margin-left: 10px;
+  content: "🐾";
+}
+
+.historia {
+  display: grid;
+}
+
+.hleft {
+  background-image: url(../assets/imagenes/aside_left.jpg);
+  height: 500px;
+  background-size: cover;
+  background-position: center;
+}
+
+.hright {
+  padding: 20px;
+  height: auto;
+}
+.hright h1 {
+  text-align: center;
+  height: auto;
+  font-family: "Dancing Script", cursive;
+}
+.hright p {
+  padding-top: 20px;
+  font-family: "Libre Franklin", sans-serif;
+}
+
+footer {
+  display: grid;
+  background-color: #1aaf6f;
+  height: auto;
+}
+
+.redes {
+  margin: 10px 0 10px 0;
+  text-transform: capitalize;
+  text-align: center;
+  color: white;
+}
+.redes img {
+  height: 100px;
+  width: 100px;
+}
+.redes a {
+  color: white;
+  letter-spacing: 10px;
+}
+.redes h2 {
+  font-size: 20px;
+}
+
+.menu {
+  margin-bottom: 10px;
+  text-transform: capitalize;
+  text-align: center;
+}
+.menu a {
+  text-decoration: none;
+  color: white;
+}
+.menu a:hover {
+  color: rgba(17, 11, 3, 0.575);
+}
+
+.contactanos {
+  text-align: center;
+  color: white;
+}
+.contactanos h2 {
+  font-size: 15px;
+}
+
+a:hover {
+  color: rgba(17, 11, 3, 0.575);
+}
+
+.copyright {
+  margin: 20px 0 20px 0;
+  font-size: 15px;
+  color: white;
+  text-align: center;
+}
+
+.subir {
+  height: 40px;
+  width: 40px;
+  background-color: white;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  text-align: center;
+  line-height: 40px;
+  color: #1aaf6f;
+  border-radius: 50%;
+  border: 2px solid color #1aaf6f;
+  font-size: 22px;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/*Lo que hacemos - Finaliza*/
+/*Donaciones - Inicia*/
+.jumbotron {
+  background-image: linear-gradient(to right, rgba(255, 255, 255, 0.267), rgba(255, 255, 255, 0.555)), url(../assets/imagenes/jumbotromp.webp);
+  background-size: cover;
+  color: rgba(2, 15, 26, 0.87);
+  border-radius: 0;
+  margin: 0px;
+  height: 370px;
+  font-size: 20px;
+}
+.jumbotron p::-moz-selection {
+  color: rgba(28, 116, 50, 0.651);
+}
+.jumbotron p::selection {
+  color: rgba(28, 116, 50, 0.651);
+}
+.jumbotron h1::-moz-selection {
+  color: rgba(28, 116, 50, 0.651);
+}
+.jumbotron h1::selection {
+  color: rgba(28, 116, 50, 0.651);
+}
+.jumbotron p {
+  font-size: 20px;
+}
+.jumbotron h1 {
+  font-size: 25px;
+}
+
+.canalesdona {
+  background-color: #1aaf6f;
+  text-align: center;
+  padding: 10px;
+  color: white;
+  margin: 0;
+  font-family: "DynaPuff", cursive;
+}
+
+.card-body {
+  text-align: center;
+}
+
+.card {
+  border: 2px solid grey;
+}
+
+.carousel img {
+  display: block;
+  height: 600px;
+  max-width: 100%;
+  line-height: 1;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+/*Donaciones - Finaliza*/
+/*Adopciones - Inicia*/
+.galeria {
+  background-image: url("../assets/imagenes/fondo_galeria.jpg");
+  padding-bottom: 20px;
+  margin: 0;
+  text-align: center;
+  color: white;
+  padding-top: 10px;
+}
+
+.imgadopta {
+  display: grid;
+  grid-gap: 10px;
+  background-image: url("../assets/imagenes/fondo_galeria.jpg");
+  margin: 5px;
+}
+
+.item7, .item11, .item10, .item9, .item8 {
+  background-image: url("../assets/imagenes/adopta8.jpg");
+  background-size: cover;
+  width: auto;
+  height: 300px;
+  filter: grayscale(100%);
+}
+
+.item7:hover, .item11:hover, .item10:hover, .item9:hover, .item8:hover {
+  transform: scale(1.04);
+  transition: all 0.8s;
+  filter: grayscale(0%);
+}
+
+.item8 {
+  background-image: url("../assets/imagenes/adopta7.jpg");
+  background-position: center;
+}
+
+.item8:hover {
+  transform: scale(1.04);
+  transition: all 0.8s;
+  filter: grayscale(0%);
+}
+
+.item9 {
+  background-image: url("../assets/imagenes/adopta6.jpg");
+}
+
+.item9:hover {
+  transform: scale(1.04);
+  transition: all 0.8s;
+  filter: grayscale(0%);
+}
+
+.item10 {
+  background-image: url("../assets/imagenes/adopta5.jpg");
+  background-position: right;
+}
+
+.item10:hover {
+  transform: scale(1.04);
+  transition: all 0.8s;
+  filter: grayscale(0%);
+}
+
+.item11 {
+  background-image: url("../assets/imagenes/adopta4.webp");
+}
+
+.item11:hover {
+  transform: scale(1.04);
+  transition: all 0.8s;
+  filter: grayscale(0%);
+}
+
+.adopta2 {
+  background-image: url("../assets/imagenes/fondo_patitas.jpg");
+  background-size: cover;
+  padding-left: 10px;
+  padding-top: 5px;
+  padding-bottom: 15px;
+}
+.adopta2 img {
+  width: 50px;
+  height: 50px;
+  padding: 0 0 8px 10px;
+}
+.adopta2 h1 {
+  margin-top: 20px;
+  padding: 0 0 10px 10px;
+}
+.adopta2 h3 {
+  padding-left: 20px;
+}
+.adopta2 p {
+  margin: 7px;
+}
+
+/*Adopciones - Finaliza*/
+/*Contactanos - Inicia*/
+main {
+  background-image: url("../assets/imagenes/fondo_galeria.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.contactformulario {
+  display: grid;
+}
+
+.formcontact {
+  margin: 10px;
+  display: block;
+  padding: 5px;
+}
+.formcontact h2 {
+  text-align: center;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: rgba(0, 0, 0, 0.596);
+  padding-bottom: 10px;
+}
+
+.contacto {
+  margin-top: 20px;
+}
+.contacto label {
+  text-align: left;
+  display: inline-block;
+  width: 80px;
+}
+.contacto input {
+  width: auto;
+  text-align: left;
+  padding: 3px;
+  margin: 10px;
+}
+.contacto #consulta {
+  text-align: center;
+  margin: 0 0 10px 50px;
+  padding: 10px;
+  width: 50px;
+}
+.contacto #botoncontact {
+  border-radius: 10px;
+  background-color: rgba(17, 49, 4, 0.384);
+  margin: 0 0 5px 100px;
+  text-align: center;
+  padding: 5px;
+  width: 150px;
+}
+.contacto #botoncontact:hover {
+  background-color: rgba(34, 24, 6, 0.315);
+  transition: all 0.5s;
+}
+
+.ubicacion {
+  height: auto;
+}
+.ubicacion h2 {
+  text-align: center;
+  color: rgba(0, 0, 0, 0.596);
+  display: grid;
+}
+
+.redes1 {
+  margin: 30px 0 0 10px;
+  text-align: center;
+  padding-bottom: 20px;
+  font-weight: bold;
+}
+.redes1 i {
+  padding-left: 10px;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+/*Contactanos - Finaliza*/
+@media only screen and (min-width: 480px) {
+  .item10 {
+    background-position: right;
+  }
+  .contacto input {
+    width: 300px;
+  }
+  iframe {
+    width: 100%;
+  }
+}
+@media only screen and (min-width: 768px) {
+  /*Lo que hacemos - Inicia*/
+  .historia {
+    grid-template-columns: 1fr 1fr;
+  }
+  .hright {
+    grid-column: 2/3;
+  }
+  .hleft {
+    grid-column: 1/2;
+  }
+  .hleft {
+    height: auto;
+  }
+  footer {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
+  .menuf {
+    grid-column: 1/2;
+  }
+  .redes {
+    grid-column: 2/3;
+    margin-top: 20px;
+  }
+  .contactanos {
+    grid-column: 3/4;
+  }
+  .copyright {
+    grid-column: 2/3;
+  }
+  /*Lo que hacemos - Finaliza*/
+  /*Adopta - Inicia*/
+  .imgadopta {
+    grid-template-columns: 1fr 1fr;
+    grid-auto-rows: 1fr 1fr 1fr;
+  }
+  .item11 {
+    grid-column: 1/3;
+  }
+  /*Adopta - Finaliza*/
+  /*Contacto - Inicia*/
+  #botoncontact {
+    border-radius: 10px;
+    background-color: rgba(128, 128, 128, 0.658);
+    margin-right: 400px;
+    text-align: center;
+    padding: 5px;
+    width: 150px;
+  }
+  .ubicacion h2 {
+    margin-top: 15px;
+  }
+  .ubi {
+    height: 500px;
+    margin: 20px 0px 0 10px;
+    padding-left: 10px;
+  }
+  .contacto input {
+    width: 500px;
+    text-align: center;
+  }
+}
+/*Contacto - Finaliza*/
+@media only screen and (min-width: 1024px) {
+  /*Lo que hacemos - Inicia*/
+  .hright h1 {
+    font-size: 50px;
+  }
+  .hright p {
+    font-size: 20px;
+  }
+  .hleft {
+    height: auto;
+  }
+  footer {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 70% 30%;
+    height: 200px;
+  }
+  .menuf {
+    grid-column: 1/2;
+    grid-row: 1/2;
+    margin-top: 10px;
+  }
+  .redes {
+    grid-column: 2/3;
+    font-size: 20px;
+  }
+  .contactanos {
+    margin-top: 10px;
+  }
+  .contactanos h2 {
+    font-size: 20px;
+  }
+  .contactanos .copyright p {
+    font-size: 20px;
+  }
+  /*Lo que hacemos - Finaliza*/
+  /*Contactanos - Inicia*/
+  .contactformulario {
+    grid-template-columns: 1fr 1fr;
+  }
+  .ubi {
+    height: 400px;
+  }
+  #botoncontact {
+    margin-left: 700px;
+  }
+  .formcontact input {
+    width: 500px;
+  }
+  /*Contactanos - Finaliza*/
+  /*Dona - Inicia*/
+  .carousel-inner {
+    height: 500px;
+  }
+  .jumbotron h1 {
+    font-size: 40px;
+  }
+  .jumbotron p {
+    font-size: 35px;
+  }
+  /*Dona - Finaliza*/
+  /*Adopta - Inicia*/
+  .imgadopta {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
+  .item7, .item8, .item9, .item10, .item11 {
+    grid-column: 1/2;
+    height: 500px;
+    background-position: center;
+  }
+  .item8 {
+    height: 500px;
+    grid-column: 2/4;
+  }
+  .item9 {
+    grid-column: 3/4;
+    height: 500px;
+  }
+  .item10 {
+    grid-column: 1/2;
+    grid-row: 2/3;
+    height: 500px;
+    background-position: center;
+  }
+  .item11 {
+    grid-column: 2/3;
+    grid-row: 2/3;
+    height: 500px;
+    background-position: left;
+  }
+}
+/*Adopta - Finaliza*/
+@media only screen and (min-width: 1200px) {
+  .ubi {
+    width: 600px;
+    height: 300px;
+    margin-left: 100px;
+  }
+}/*# sourceMappingURL=estilos.css.map */
